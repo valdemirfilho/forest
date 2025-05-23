@@ -1,5 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
+
+import padraoSVG from "../assets/padrao.svg";
 ---
 
 <Layout>
@@ -123,7 +125,7 @@ import Layout from "../layouts/Layout.astro";
 
     <section
       id="acomodacoes"
-      class="container mt-16 mb-12 grid items-end gap-8 bg-[url('./img/padrao.svg')] bg-contain bg-top-left bg-no-repeat sm:mb-16 sm:grid-cols-[2fr_2fr] md:grid-cols-[2fr_3fr]"
+      class="container mt-16 mb-12 grid items-end gap-8 bg-[url(/img/padrao.svg)] bg-contain bg-top-left bg-no-repeat sm:mb-16 sm:grid-cols-[2fr_2fr] md:grid-cols-[2fr_3fr]"
     >
       <div>
         <h2 class="mb-8 font-serif text-3xl text-white sm:text-4xl">
@@ -350,7 +352,7 @@ import Layout from "../layouts/Layout.astro";
   </section>
 
   <section
-    class="container mx-auto mb-12 bg-[url('src/assets/padrao.svg')] bg-contain bg-center bg-no-repeat px-2 py-16"
+    class="container mx-auto mb-12 bg-[url(/img/padrao.svg)] bg-contain bg-center bg-no-repeat px-2 py-16"
   >
     <p
       class="mb-4 text-center text-sm tracking-widest text-verde-200 uppercase"
