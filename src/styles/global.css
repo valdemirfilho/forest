@@ -1,1 +1,43 @@
 @import "tailwindcss";
+
+@theme {
+  --color-verde-200: #acef75;
+  --color-verde-300: #91ee77;
+  --color-verde-400: #17e880;
+  --color-verde-700: #2e482c;
+  --color-verde-800: #16281f;
+  --color-verde-900: #0f1c15;
+  --color-verde-950: #030504;
+
+  /* adiciona uma animação */
+  --animate-slideIn: slideIn 0.3s ease-in-out forwards;
+}
+
+/*10px 320px -> 16px 640px*/
+@utility text-fluid-sm {
+  font-size: clamp(0.625rem, 0.25rem + 1.875vw, 1rem);
+}
+
+@utility animate-delay-2 {
+  animation-delay: 200ms;
+}
+
+@utility animate-delay-3 {
+  animation-delay: 300ms;
+}
+
+@utility animate-delay-4 {
+  animation-delay: 400ms;
+}
+
+/* adiciona um keyframe */
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
